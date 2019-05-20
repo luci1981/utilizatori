@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HomePage</title>
+</head>
+<body>
+    <div class="container">
+        <table>
+            <thead align="center">
+                <td>First Name</td>
+                <td>Last Name</td>
+                <td>Number of logins</td>
+            </thead>
+            {% for user in utilizatori %}
+            <tr align="center">
+                <td>{{ user.first_name }}</td>
+                <td>{{ user.last_name }}</td>
+                <td>{{ user.number_of_login }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
+</html>
